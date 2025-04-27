@@ -84,7 +84,7 @@ PERIOD = 10
 
 
 # region Auxiliary functions
-def ref(s, n=1):  # 对序列整体下移动N,返回序列(shift后会产生NAN)
+def ref(s, n=1):  
     return pd.Series(s).shift(n).values
 
 
